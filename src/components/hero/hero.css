@@ -1,0 +1,45 @@
+.hero
+{
+    background-image: url('hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: left;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroTextBG
+{
+    background-color: #21212180;
+    box-shadow: 0 0 10px 5px #21212180;
+    max-width: 50%;
+}
+
+.heroText
+{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    z-index: 1;
+    margin: 20px 20px;
+    /* max-width: 50%; */
+}
+
+.heroText h2
+{
+    font-family: "BABHeading";
+    font-size: 3em;
+}
+
+.heroText p
+{
+    color: #ffffff;
+    font-size: 2em;
+    line-height: 1.6;
+    margin:0;
+}
