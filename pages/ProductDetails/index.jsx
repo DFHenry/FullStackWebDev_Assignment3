@@ -18,16 +18,16 @@ export default function ProductDetails(props)
 
     return(
         <main>
-            <div class="itemEntry">
-                <h2>{state.name}</h2>
-                <p>{state.description}</p>
-                <h3>Cost: ${state.cost}</h3>
+            <div class="detailEntry">
+                <h1 class="detailName">{state.name}</h1>
+                <p class="detailDesc">{state.description}</p>
+                <h3 class="detailCost">Cost: ${state.cost}</h3>
+                <img class="detailImage" src={state.image_href} alt={state.short_desc} />
             </div>
             
             <div class="linkBump">
                 <Link to="/">Continue Shopping</Link>
             </div>
-
 
         </main>
     )

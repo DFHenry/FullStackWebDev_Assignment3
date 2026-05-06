@@ -63,6 +63,8 @@ a
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* Item Grid Card */
+
 .itemName
 {
     grid-area: name;
@@ -125,9 +127,51 @@ a
     margin-top: 0;
 }
 
-.itemEntry
+/* Item Detail Card */
+
+.detailName
 {
+    margin: 5px 0;
+    grid-area: name;
+}
+
+.detailDesc
+{
+    grid-area: desc;
+    font-size: 1.5em;
+}
+
+.detailCost
+{
+    grid-area: cost;
+    align-self: self-end;
+}
+
+.detailImage
+{
+    grid-area: image;
+    width: 75%;
+}
+
+.detailEntry
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "name name"
+        "desc image"
+        "cost image";
     background-color: #d74a2a;
-    padding: 0 10px 1px 10px;
-    margin: 0 20px;
+    padding: 10px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    margin: 20px 15%;
+}
+
+/* About Page */
+
+.aboutText
+{
+    font-size: 16pt;
 }
