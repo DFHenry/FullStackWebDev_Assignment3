@@ -15,7 +15,7 @@
 {
     background-color: #21212180;
     box-shadow: 0 0 10px 5px #21212180;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .heroText
@@ -40,6 +40,6 @@
 {
     color: #ffffff;
     font-size: 2em;
-    line-height: 1.6;
+    line-height: 1.2;
     margin:0;
 }

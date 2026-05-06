@@ -23,8 +23,8 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-      <Banner />
+      <BrowserRouter>
+        <Banner />
       
         <NavBar />
           <Routes>

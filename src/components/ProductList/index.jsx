@@ -15,8 +15,6 @@ export default function ProductList()
             let data = await response.json();
 
             setProductList(data.productListing);
-
-
         }
         getProducts();
 
@@ -26,12 +24,12 @@ export default function ProductList()
     return(
         productList.map((m, i) => 
         (
-            <div class="itemCard">
-                <div key={i}>
-                    <h3>{m.name}</h3>
-                    <p>${m.cost}</p>
-                    <Link to="/ProductDetails" state={m}>View Details</Link>
-                </div>
+            <div class="itemCard" key={i}>
+                <h3 class="itemName">{m.name}</h3>
+                <p class="itemShortDesc">{m.short_desc}</p>
+                <p class="itemCost">${m.cost}</p>
+                <Link class="itemLink" to="/ProductDetails" state={m}>View Details</Link>
+                <img class="itemImage" src={m.image_href} alt={m.description} />
             </div>
         ))
     );

@@ -7,9 +7,8 @@ export default function Hero()
         <div class="hero">
             <div class="heroTextBG">
                 <div class="heroText">
-                    <h2>Welcome</h2>
-                    <br/>
-                    <p>Welcome to our grand opening!</p>
+                    <h1>Welcome</h1>
+                    <p>Welcome to our grand opening! We have great baked goods ready for any occasion! Drop in and say hello!</p>
                 </div>
             </div>
         </div>

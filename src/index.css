@@ -16,14 +16,21 @@ h1, h2, h3
     font-family: "BABHeading";
 }
 
+h1
+{
+    font-size: 4em;
+}
+
 h2
 {
-    font-size: 2em;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h3
 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 a
@@ -56,8 +63,45 @@ a
     grid-template-columns: repeat(3, 1fr);
 }
 
+.itemName
+{
+    grid-area: name;
+    max-height: 100px;
+}
+
+.itemCost
+{
+    grid-area: cost;
+}
+
+.itemShortDesc
+{
+    grid-area: desc;
+}
+
+.itemLink
+{
+    grid-area: link;
+    align-self: end;
+}
+
+.itemImage
+{
+    grid-area: image;
+    width: 75%;
+}
+
 .itemCard
 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "name image"
+        "desc image"
+        "cost image"
+        "link image";
+    align-items: start;
     padding: 10px;
     background-color: #d74a2a;
     margin: 15px;
@@ -67,7 +111,7 @@ a
 .itemCard a
 {
     color: #212121;
-    font-size: 1.25em;
+    font-size: 1.75em;
     text-decoration: none;
 }
 
