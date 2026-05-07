@@ -33,6 +33,12 @@ h3
     font-size: 2em;
 }
 
+p
+{
+    font-family: 'Adelle', serif;
+    font-size: 16pt;
+}
+
 a
 {
     font-family: "BABHeading";
@@ -46,6 +52,11 @@ a
 }
 
 /* LAYOUTS */
+
+#main-navigation
+{
+    position: sticky;
+}
 
 .catalogSection
 {
@@ -91,12 +102,13 @@ a
 {
     grid-area: image;
     width: 75%;
+    justify-self: self-end;
 }
 
 .itemCard
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     grid-template-rows: auto;
     grid-template-areas: 
         "name image"
@@ -171,7 +183,72 @@ a
 
 /* About Page */
 
+.aboutTitle
+{
+    margin-left: 20px;
+}
+
+.aboutText
+{
+    margin: 20px;
+}
+
 .aboutText p
 {
     font-size: 16pt;
 }
+
+.aboutGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.aboutImage
+{
+    margin: 20px;
+}
+
+.aboutImage img
+{
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px)
+{
+    .itemGrid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .itemCard
+    {
+        grid-template-areas: 
+        "name name"
+        "image image"
+        "desc desc"
+        "cost cost"
+        "link link";
+    }
+
+    .itemImage
+    {
+        justify-self: center;
+    }
+
+    .itemShortDesc
+    {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .itemGrid
+    {
+        grid-template-columns: 1fr;
+    }
+} 
+
