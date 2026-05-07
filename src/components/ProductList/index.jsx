@@ -26,10 +26,10 @@ export default function ProductList()
         (
             <div class="itemCard" key={i}>
                 <h3 class="itemName">{m.name}</h3>
+                <img class="itemImage" src={m.image_href} alt={m.short_desc} />
                 <p class="itemShortDesc">{m.short_desc}</p>
                 <p class="itemCost">${m.cost}</p>
                 <Link class="itemLink" to="/ProductDetails" state={m}>View Details</Link>
-                <img class="itemImage" src={m.image_href} alt={m.description} />
             </div>
         ))
     );

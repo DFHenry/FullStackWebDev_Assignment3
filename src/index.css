@@ -95,27 +95,20 @@ a
 .itemLink
 {
     grid-area: link;
-    align-self: end;
+    align-self: center;
 }
 
 .itemImage
 {
     grid-area: image;
-    width: 75%;
-    justify-self: self-end;
+    width: 100%;
 }
 
 .itemCard
 {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "name image"
-        "desc image"
-        "cost image"
-        "link image";
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
     background-color: #d74a2a;
     margin: 15px;
@@ -241,6 +234,11 @@ a
     .itemShortDesc
     {
         justify-self: start;
+    }
+
+    .detailEntry
+    {    margin: 20px 5%;
+        
     }
 }
 

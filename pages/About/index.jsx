@@ -12,7 +12,6 @@ export default function About()
             <h1 class="aboutTitle">About The Bad Ass Bakery</h1>
             <div class="aboutGrid">
                 <div class="aboutText">
-                    
                     <p>Our bakery started as the West End Bakery over 20 years ago by my father, John Smith. On his retirement, he handed over the bakery
                         to me, but he didn't want the business to stay the same has he had it. He told me to make it my own.</p>
                     <br />

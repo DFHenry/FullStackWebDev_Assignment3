@@ -21,13 +21,12 @@ export default function ServicesList()
     return(
         servicesList.map((m, i) =>
         (
-            <div className="itemCard">
-                <div key={i}>
-                    <h3>{m.name}</h3>
-                    <p>{m.description}</p>
-                    <p>${m.cost}</p>
-                    <Link to="/ServiceDetails" state={m}>View Details</Link>
-                </div>
+            <div class="itemCard" key={i}>
+                <h3 class="itemName">{m.name}</h3>
+                <img class="itemImage" src={m.image} alt={m.description} />
+                <p class="itemShortDesc">{m.description}</p>
+                <p class="itemCost">${m.cost}</p>
+                <Link class="itemLink" to="/ServiceDetails" state={m}>View Details</Link>
             </div>
         ))
     )
