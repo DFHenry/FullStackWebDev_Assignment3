@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #d74a2a;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M10.25,0h29.49c5.66.02,10.24,4.6,10.25,10.25v29.49c-.02,5.66-4.6,10.24-10.25,10.25H10.25C4.6,49.99.02,45.41,0,39.75V10.26C.02,4.6,4.6.02,10.25,0h0Z"/>
+  <path class="cls-1" d="M9,9h32c2.2,0,4,1.8,4,4v24c0,2.2-1.8,4-4,4H9c-2.2,0-4-1.8-4-4l.02-24c0-2.2,1.78-4,3.98-4ZM25,27l-16-10v20h32v-20l-16,10ZM25,23l-16-10h32l-16,10Z"/>
+</svg>
